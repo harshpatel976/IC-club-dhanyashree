@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistor Details</title>
+    <link rel="stylesheet" href="stylesr0603.css">
+</head>
+<body>
+<!-- Passive Components Tab -->
+<div id="Passive" class="tabcontent">
+    <h2>Passive Components</h2>
+    <div class="accordion">
+        <button class="accordion-button">SMD</button>
+        <div class="accordion-content">
+            <!-- Existing SMD Passive Components -->
+
+            <!-- New SMD Resistor Component Card -->
+            <div class="component-card commercial">
+                <img src="images/resistor_smd.jpg" alt="SMD Resistor R0603">
+                <h3>Surface Mount Resistor</h3>
+                <p><strong>Part No.:</strong> R0603</p>
+                <p><strong>Specifications:</strong> 0603, 1kΩ, 1%, 0.1W</p>
+                <p><strong>Application:</strong> Voltage division, Biasing</p>
+                <a href="datasheets/R0603.pdf" target="_blank">Download Datasheet</a>
+                <button onclick="openComponentDetail('R0603')">More Info</button>
+                
+            </div>
+            <!-- Add more SMD Passive Components here -->
+        </div>
+
+        <button class="accordion-button">Through Hole</button>
+        <div class="accordion-content">
+            <!-- Existing Through Hole Passive Components -->
+
+            <!-- Example Through Hole Capacitor Component Card -->
+            <div class="component-card military">
+                <img src="images/capacitor_through_10uF_100V.jpg" alt="Through-Hole Capacitor C10uF_100V">
+                <h3>Film Capacitor</h3>
+                <p><strong>Part No.:</strong> C10uF_100V</p>
+                <p><strong>Specifications:</strong> 10µF, 100V, Radial Lead</p>
+                <p><strong>Application:</strong> Signal coupling, Filtering</p>
+                <a href="datasheets/C10uF_100V.pdf" target="_blank">Download Datasheet</a>
+                <button onclick="openComponentDetail('C10uF_100V')">More Info</button>
+                
+            </div>
+            <!-- Add more Through Hole Passive Components here -->
+        </div>
+    </div>
+</div>
+    <script src="scriptr0603.js"></script>
+</body>
+</html>
