@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active and Passive Components</title>
+    <link rel="stylesheet" href="styles6.css">
+</head>
+<body>
+    <header>
+        <h1>Active and Passive Components</h1>
+        <nav>
+            <button class="tablink active" onclick="openTab(event, 'Active')">Active Components</button>
+            <button class="tablink" onclick="openTab(event, 'Passive')">Passive Components</button>
+            <input type="text" id="searchBar" placeholder="Search Components..." onkeyup="searchComponents()">
+        </nav>
+    </header>
+
+    <main>
+        <!-- Active Components Tab -->
+        <div id="Active" class="tabcontent active">
+            <h2>Active Components</h2>
+            <div class="accordion">
+                <button class="accordion-button">Transistors</button>
+                <div class="accordion-content">
+                    
+                    <button class="accordion-button">BJT</button>
+                    <div class="accordion-content">
+                        <button class="accordion-button">SMD</button>
+                        <div class="accordion-content">
+                            <!-- Example Active SMD Component -->
+                            <div class="component-card commercial">
+                                <img class="image" src="images/active/bjt_bc846b_smd.png" alt="SMD BJT BC846B">
+                                <h3>NPN SMD Transistor</h3>
+                                <p><strong>Part No.:</strong> BC846B</p>
+                                <p><strong>Specifications:</strong> V<sub>CEO</sub> 65V, I<sub>C</sub> 100mA, h<sub>FE</sub> 100-300</p>
+                                <p><strong>Application:</strong> Switching Applications, Signal Amplification, Digital Logic Circuits</p>
+                                <a href="datasheets/BC846B.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('BC846B')">More Info</button>
+                                
+                            </div>
+                            <div class="component-card commercial">
+                                <img class="image" src="images/active/bjt_bc847b_smd.png" alt="SMD BJT BC847B">
+                                <h3>NPN SMD Transistor</h3>
+                                <p><strong>Part No.:</strong> BC847B</p>
+                                <p><strong>Specifications:</strong> V<sub>CEO</sub> 45V, I<sub>C</sub> 100mA, h<sub>FE</sub> 110-800</p>
+                                <p><strong>Application:</strong> General Switching Applications, Low-Frequency Signal Amplification</p>
+                                <a href="datasheets/BC847B.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('BC847B')">More Info</button>
+                            </div>
+                    
+                            <!-- SMD BJT BC856B -->
+                            <div class="component-card commercial">
+                                <img class="image" src="images/active/bjt_bc856b_smd.png" alt="SMD BJT BC856B">
+                                <h3>PNP SMD Transistor</h3>
+                                <p><strong>Part No.:</strong> BC856B</p>
+                                <p><strong>Specifications:</strong> V<sub>CEO</sub> -65V, I<sub>C</sub> -100mA, h<sub>FE</sub> 110-800</p>
+                                <p><strong>Application:</strong> Low-Power Switching, Signal Amplification, Analog Circuits</p>
+                                <a href="datasheets/BC856B.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('BC856B')">More Info</button>
+                            </div>
+                            <!-- Add more Active SMD BJTs here -->
+                        </div>
+            
+                        <button class="accordion-button">Through Hole</button>
+                        <div class="accordion-content">
+                            <!-- New Active Through-Hole BJT Component Card -->
+                            <div class="component-card military">
+                                <h3>NPN Power Transistor</h3>
+                                <img class="image" src="images/active/bjt_2n2222a_through.jpg" alt="Through-Hole BJT 2N2222A">
+                                <p><strong>Part No.:</strong> 2N2222A</p>
+                                <p><strong>Specifications:</strong> V<sub>CEO</sub> 40V, I<sub>C</sub> 800mA, h<sub>FE</sub> 100-300</p>
+                                <p><strong>Application:</strong> Power Switching, Audio Amplifiers, Motor Drivers</p>
+                                <a href="datasheets/2N2222A.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('2N2222A')">More Info</button>
+                                
+                            </div>
+                            <!-- Add more Active Through-Hole BJTs here -->
+                            <div class="component-card military">
+                                <h3>NPN Power Transistor</h3>
+                                <img class="image" src="images/active/bjt_2n3055_through.jpg" alt="Through-Hole BJT 2N3055">
+                                <p><strong>Part No.:</strong> 2N3055</p>
+                                <p><strong>Specifications:</strong> V<sub>CEO</sub> 60V, I<sub>C</sub> 15A, h<sub>FE</sub> 20-70</p>
+                                <p><strong>Application:</strong> Power Amplifiers, Switching Regulators, Motor Control</p>
+                                <a href="datasheets/2N3055.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('2N3055')">More Info</button>
+                            </div>
+                        
+                            <!-- New Active Through-Hole BJT Component Card: 2N2907 -->
+                            <div class="component-card military">
+                                <h3>PNP General-Purpose Transistor</h3>
+                                <img class="image" src="images/active/bjt_2n2907_through.jpg" alt="Through-Hole BJT 2N2907">
+                                <p><strong>Part No.:</strong> 2N2907</p>
+                                <p><strong>Specifications:</strong> V<sub>CEO</sub> -60V, I<sub>C</sub> -600mA, h<sub>FE</sub> 100-300</p>
+                                <p><strong>Application:</strong> General Switching, Amplifiers, Signal Processing</p>
+                                <a href="datasheets/2N2907.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('2N2907')">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <button class="accordion-button">JFET</button>
+                    <div class="accordion-content">
+                        <button class="accordion-button">SMD</button>
+                        <div class="accordion-content">
+                            <!-- New Active SMD JFET Component Card -->
+                            <div class="component-card commercial">
+                                <img class="image" src="images/active/jfet_jn8048t1g_smd.jpg" alt="SMD JFET JN8048T1G">
+                                <h3>N-Channel JFET</h3>
+                                <p><strong>Part No.:</strong> JN8048T1G</p>
+                                <p><strong>Specifications:</strong> V<sub>DS</sub> 30V, V<sub>GS</sub> ±20V, I<sub>D</sub> 0.5A, V<sub>GS(off)</sub> -2V to -6V, SMD-0805 Package</p>
+                                <p><strong>Application:</strong> Amplifiers, Switching Circuits, Voltage-Controlled Resistors</p>
+                                <a href="datasheets/JN8048T1G.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('JN8048T1G')">More Info</button>
+                                
+                            </div>
+                            <!-- Add more Active SMD JFETs here -->
+                            <div class="component-card commercial">
+                                <img class="image" src="images/active/jfet_jn439t1g_smd.jpg" alt="SMD JFET JN439T1G">
+                                <h3>N-Channel JFET</h3>
+                                <p><strong>Part No.:</strong> JN439T1G</p>
+                                <p><strong>Specifications:</strong> V<sub>DS</sub> 35V, V<sub>GS</sub> ±25V, I<sub>D</sub> 0.3A, V<sub>GS(off)</sub> -1V to -4V, SOT-23 Package</p>
+                                <p><strong>Application:</strong> Signal Processing, Low-Noise Amplifiers, Voltage-Controlled Resistors</p>
+                                <a href="datasheets/JN439T1G.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('JN439T1G')">More Info</button>
+                            </div>
+                            
+                            <!-- Active SMD JFET Component Card for 2N5458SMD -->
+                            <div class="component-card commercial">
+                                <img class="image" src="images/active/jfet_2n5458smd.jpg" alt="SMD JFET 2N5458SMD">
+                                <h3>N-Channel JFET</h3>
+                                <p><strong>Part No.:</strong> 2N5458SMD</p>
+                                <p><strong>Specifications:</strong> V<sub>DS</sub> 25V, V<sub>GS</sub> ±20V, I<sub>D</sub> 0.1A, V<sub>GS(off)</sub> -2V to -5V, SOT-23 Package</p>
+                                <p><strong>Application:</strong> Amplifiers, Oscillators, Analog Switches</p>
+                                <a href="datasheets/2N5458SMD.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('2N5458SMD')">More Info</button>
+                            </div>
+
+
+                        </div>
+            
+                        <button class="accordion-button">Through Hole</button>
+                        <div class="accordion-content">
+                            <!-- New Active Through-Hole JFET Component Card -->
+                            <div class="component-card military">
+                                <img class="image" src="images/active/jfet_jf1005p_through.jpg" alt="Through-Hole JFET JF1005P">
+                                <h3>P-Channel JFET</h3>
+                                <p><strong>Part No.:</strong> JF1005P</p>
+                                <p><strong>Specifications:</strong> V<sub>DS</sub> -60V, V<sub>GS</sub> ±30V, I<sub>D</sub> -1A, V<sub>GS(off)</sub> -3V to -8V, Through-Hole Axial Package</p>
+                                <p><strong>Application:</strong> Analog Switches, Variable Gain Amplifiers, Digital Logic Circuits</p>
+                                <a href="datasheets/JF1005P.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('JF1005P')">More Info</button>
+                                
+                            </div>
+                            <!-- Add more Active Through-Hole JFETs here -->
+                            <div class="component-card military">
+                                <img class="image" src="images/active/jfet_jf1023n_through.jpg" alt="Through-Hole JFET JF1023N">
+                                <h3>N-Channel JFET</h3>
+                                <p><strong>Part No.:</strong> JF1023N</p>
+                                <p><strong>Specifications:</strong> V<sub>DS</sub> 50V, V<sub>GS</sub> ±25V, I<sub>D</sub> 0.8A, V<sub>GS(off)</sub> -2V to -6V, TO-92 Package</p>
+                                <p><strong>Application:</strong> Low-Noise Amplifiers, Oscillators, Voltage-Controlled Attenuators</p>
+                                <a href="datasheets/JF1023N.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('JF1023N')">More Info</button>
+                            </div>
+                            
+                            <!-- Active Through-Hole JFET Component Card for 2N5486 -->
+                            <div class="component-card military">
+                                <img class="image" src="images/active/jfet_2n5486_through.jpg" alt="Through-Hole JFET 2N5486">
+                                <h3>N-Channel JFET</h3>
+                                <p><strong>Part No.:</strong> 2N5486</p>
+                                <p><strong>Specifications:</strong> V<sub>DS</sub> 30V, V<sub>GS</sub> ±20V, I<sub>D</sub> 0.1A, V<sub>GS(off)</sub> -0.5V to -7V, TO-92 Package</p>
+                                <p><strong>Application:</strong> RF Amplifiers, Switching Circuits, High-Frequency Oscillators</p>
+                                <a href="datasheets/2N5486.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('2N5486')">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="accordion-button">MOSFETs</button>
+                    <div class="accordion-content">
+                        <button class="accordion-button">SMD</button>
+                        <div class="accordion-content">
+                <!-- New Active SMD MOSFET Component Card -->
+                            <div class="component-card commercial">
+                                <img class="image" src="images/active/mosfet_irlml6344_smd.jpg" alt="SMD MOSFET IRLML6344">
+                                <h3>Logic Level N-Channel MOSFET</h3>
+                                <p><strong>Part No.:</strong> IRLML6344</p>
+                                <p><strong>Specifications:</strong> V<sub>DS</sub> 30V, I<sub>D</sub> 6.3A, R<sub>DS(on)</sub> 0.029Ω</p>
+                                <p><strong>Application:</strong> Switching Applications, DC-DC Converters, Power Management Systems</p>
+                                <a href="datasheets/IRLML6344.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('IRLML6344')">More Info</button>
+                    
+                            </div>
+                <!-- Add more Active SMD MOSFETs here -->
+                            <div class="component-card commercial">
+                                <img class="image" src="images/active/mosfet_irlml6345_smd.jpg" alt="SMD MOSFET IRLML6345">
+                                <h3>Logic Level N-Channel MOSFET</h3>
+                                <p><strong>Part No.:</strong> IRLML6345</p>
+                                <p><strong>Specifications:</strong> V<sub>DS</sub> 30V, I<sub>D</sub> 7.3A, R<sub>DS(on)</sub> 0.019Ω</p>
+                                <p><strong>Application:</strong> Low Power Switching, Motor Control, DC-DC Converters</p>
+                                <a href="datasheets/IRLML6345.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('IRLML6345')">More Info</button>
+                            </div>
+                            <div class="component-card commercial">
+                                <img class="image" src="images/active/mosfet_irlz44n_smd.jpg" alt="SMD MOSFET IRLZ44N">
+                                <h3>Logic Level N-Channel MOSFET</h3>
+                                <p><strong>Part No.:</strong> IRLZ44N</p>
+                                <p><strong>Specifications:</strong> V<sub>DS</sub> 55V, I<sub>D</sub> 47A, R<sub>DS(on)</sub> 0.022Ω</p>
+                                <p><strong>Application:</strong> Power Switching, High-Speed Switching, Motor Drivers</p>
+                                <a href="datasheets/IRLZ44N.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('IRLZ44N')">More Info</button>
+                            </div>
+                        </div>
+
+                        <button class="accordion-button">Through Hole</button>
+                        <div class="accordion-content">
+                <!-- New Active Through-Hole MOSFET Component Card -->
+                            <div class="component-card military">
+                                <img class="image" src="images/active/mosfet_irf540n_through.jpg" alt="Through-Hole MOSFET IRF540N">
+                                <h3>Power N-Channel MOSFET</h3>
+                                <p><strong>Part No.:</strong> IRF540N</p>
+                                <p><strong>Specifications:</strong> V<sub>DS</sub> 100V, I<sub>D</sub> 33A, R<sub>DS(on)</sub> 0.044Ω</p>
+                                <p><strong>Application:</strong> Power Supplies, Motor Drivers, Audio Amplifiers</p>
+                                <a href="datasheets/IRF540N.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('IRF540N')">More Info</button>
+                    
+                            </div>
+                <!-- Add more Active Through-Hole MOSFETs here -->
+                            <div class="component-card military">
+                                <img class="image" src="images/active/mosfet_irfz44n_through.jpg" alt="Through-Hole MOSFET IRFZ44N">
+                                <h3>Power N-Channel MOSFET</h3>
+                                <p><strong>Part No.:</strong> IRFZ44N</p>
+                                <p><strong>Specifications:</strong> V<sub>DS</sub> 55V, I<sub>D</sub> 49A, R<sub>DS(on)</sub> 0.022Ω</p>
+                                <p><strong>Application:</strong> Power Supplies, DC-DC Converters, Motor Drivers</p>
+                                <a href="datasheets/IRFZ44N.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('IRFZ44N')">More Info</button>
+                            </div>
+                            <div class="component-card military">
+                                <img class="image" src="images/active/mosfet_irfp260n_through.jpg" alt="Through-Hole MOSFET IRFP260N">
+                                <h3>Power N-Channel MOSFET</h3>
+                                <p><strong>Part No.:</strong> IRFP260N</p>
+                                <p><strong>Specifications:</strong> V<sub>DS</sub> 200V, I<sub>D</sub> 50A, R<sub>DS(on)</sub> 0.04Ω</p>
+                                <p><strong>Application:</strong> Power Supplies, High-Power Motor Drivers, Amplifiers</p>
+                                <a href="datasheets/IRFP260N.pdf" target="_blank">Download Datasheet</a>
+                                <button onclick="openComponentDetail('IRFP260N')">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+
+        
+            
+
+        <!-- Passive Components Tab -->
+        <div id="Passive" class="tabcontent">
+            <h2>Passive Components</h2>
+            <div class="accordion">
+                
+                <button class="accordion-button">Resistors</button>
+                <div class="accordion-content">
+                    <button class="accordion-button">SMD</button>
+                    <div class="accordion-content">
+                        <!-- New Passive SMD Resistor Component Card -->
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/resistor_smd.jpg" alt="SMD Resistor">
+                            <h3>Resistor</h3>
+                            <p><strong>Part No.:</strong> R9101</p>
+                            <p><strong>Specifications:</strong> 10kΩ, 1%, 0603</p>
+                            <p></p>strong>Application:</strong> Voltage Division, Biasing</p>
+                            <a href="datasheets/R9101.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('R9101')">More Info</button>
+                            
+                        </div>
+                        <!-- Add more Passive SMD Resistors here -->
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/resistor_r4702_smd.jpg" alt="SMD Resistor R4702">
+                            <h3>Resistor</h3>
+                            <p><strong>Part No.:</strong> R4702</p>
+                            <p><strong>Specifications:</strong> 470Ω, 5%, 0805</p>
+                            <p><strong>Application:</strong> Current Limiting, Pull-up/Pull-down</p>
+                            <a href="datasheets/R4702.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('R4702')">More Info</button>
+                        </div>
+                
+                        <!-- New Passive SMD Resistor Component Card 2 -->
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/resistor_r2203_smd.jpg" alt="SMD Resistor R2203">
+                            <h3>Resistor</h3>
+                            <p><strong>Part No.:</strong> R2203</p>
+                            <p><strong>Specifications:</strong> 2.2kΩ, 1%, 0402</p>
+                            <p><strong>Application:</strong> Signal Conditioning, Voltage Sensing</p>
+                            <a href="datasheets/R2203.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('R2203')">More Info</button>
+                        </div> 
+                    </div>
+
+            
+                    <button class="accordion-button">Through Hole</button>
+                    <div class="accordion-content">
+                         <!-- New Passive SMD Resistor Component Card -->
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/resistor_through.jpg" alt="SMD Resistor">
+                            <h3>Carbon Film Through-Hole Resistor</h3>
+                            <p><strong>Part No.:</strong> R1K</p>
+                            <p><strong>Specifications:</strong> 1kΩ, ±5%, 0.25W, Axial Package</p>
+                            <p><strong>Application:</strong> Current Limiting, Biasing, Feedback Networks</p>
+                            <a href="datasheets/R1K.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('R1K')">More Info</button>
+                                    
+                        </div>
+                                <!-- Add more Passive SMD Resistors here -->
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/resistor_through_r10k.jpg" alt="Through-Hole Resistor">
+                            <h3>Carbon Film Through-Hole Resistor</h3>
+                            <p><strong>Part No.:</strong> R10K</p>
+                            <p><strong>Specifications:</strong> 10kΩ, ±5%, 0.25W, Axial Package</p>
+                            <p><strong>Application:</strong> Signal Conditioning, Pull-Up Resistors</p>
+                            <a href="datasheets/R10K.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('R10K')">More Info</button>
+                        </div>
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/resistor_through_r4r7.jpg" alt="Through-Hole Resistor">
+                            <h3>Metal Film Through-Hole Resistor</h3>
+                            <p><strong>Part No.:</strong> R4R7</p>
+                            <p><strong>Specifications:</strong> 4.7Ω, ±1%, 0.5W, Axial Package</p>
+                            <p><strong>Application:</strong> Current Sensing, Voltage Dividers</p>
+                            <a href="datasheets/R4R7.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('R4R7')">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="accordion-button">Inductors</button>
+                <div class="accordion-content">
+                    <button class="accordion-button">SMD</button>
+                    <div class="accordion-content">
+                <!-- New Passive SMD Inductor Component Card -->
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/inductor_l2205_smd.jpg" alt="SMD Inductor L2205">
+                            <h3>Power Inductor</h3>
+                            <p><strong>Part No.:</strong> L2205</p>
+                            <p><strong>Specifications:</strong> 10µH, 1A, 2205 Package</p>
+                            <p><strong>Application:</strong> Switching Power Supplies, Filters</p>
+                            <a href="datasheets/L2205.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('L2205')">More Info</button>
+                        </div>
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/inductor_l3308_smd.jpg" alt="SMD Inductor L3308">
+                            <h3>Shielded Power Inductor</h3>
+                            <p><strong>Part No.:</strong> L3308</p>
+                            <p><strong>Specifications:</strong> 33µH, 2A, 3308 Package</p>
+                            <p><strong>Application:</strong> DC-DC Converters, EMI Suppression</p>
+                            <a href="datasheets/L3308.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('L3308')">More Info</button>
+                        </div>
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/inductor_l4706_smd.jpg" alt="SMD Inductor L4706">
+                            <h3>High Current Inductor</h3>
+                            <p><strong>Part No.:</strong> L4706</p>
+                            <p><strong>Specifications:</strong> 47µH, 0.8A, 4706 Package</p>
+                            <p><strong>Application:</strong> Signal Filtering, Energy Storage</p>
+                            <a href="datasheets/L4706.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('L4706')">More Info</button>
+                        </div>
+                        
+                        
+                    </div>
+                <!-- Add more Passive SMD Inductors here -->
+                    
+                
+                    <button class="accordion-button">Through Hole</button>
+                    <div class="accordion-content">
+                <!-- New Passive Through Hole Inductor Component Card -->
+                        <div class="component-card military">
+                        <img class="image" src="images/passive/inductor_l1_through.jpg" alt="Through Hole Inductor L1">
+                        <h3>Power Inductor</h3>
+                        <p><strong>Part No.:</strong> L1</p>
+                        <p><strong>Specifications:</strong> 100µH, 5A, Axial Package</p>
+                        <p><strong>Application:</strong> DC-DC Converters, EMI Filters</p>
+                        <a href="datasheets/L1.pdf" target="_blank">Download Datasheet</a>
+                        <button onclick="openComponentDetail('L1')">More Info</button>
+                    
+                        </div>
+                         
+                        
+                    
+                            <!-- Passive Through Hole Inductor Component Card: L2 -->
+                        <div class="component-card military">
+                            <img class="image" src="images/passive/inductor_l2_through.jpg" alt="Through Hole Inductor L2">
+                            <h3>Power Inductor</h3>
+                            <p><strong>Part No.:</strong> L2</p>
+                            <p><strong>Specifications:</strong> 220µH, 3A, Axial Package</p>
+                            <p><strong>Application:</strong> Power Supplies, Signal Filtering</p>
+                            <a href="datasheets/L2.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('L2')">More Info</button>
+                        </div>
+                        
+                            <!-- Passive Through Hole Inductor Component Card: L3 -->
+                        <div class="component-card military">
+                            <img class="image" src="images/passive/inductor_l3_through.jpg" alt="Through Hole Inductor L3">
+                            <h3>Choke Inductor</h3>
+                            <p><strong>Part No.:</strong> L3</p>
+                            <p><strong>Specifications:</strong> 470µH, 2A, Axial Package</p>
+                            <p><strong>Application:</strong> EMI Suppression, DC-DC Converters</p>
+                            <a href="datasheets/L3.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('L3')">More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more Passive Through Hole Inductors here -->
+        
+                
+                <button class="accordion-button">Potentiometers</button>
+                <div class="accordion-content">
+                    <button class="accordion-button">SMD</button>
+                    <div class="accordion-content">
+                <!-- New Passive SMD Potentiometer Component Card -->
+                        <div class="component-card commercial">
+                        <img class="image" src="images/passive/potentiometer_vr1k2r-smd_smd.jpg" alt="SMD Potentiometer VR1K2R-SMD">
+                        <h3>Trimmer Potentiometer</h3>
+                        <p><strong>Part No.:</strong> VR1K2R-SMD</p>
+                        <p><strong>Specifications:</strong> 1kΩ, 0.1W, 0805 Package, Single-Turn</p>
+                        <p><strong>Application:</strong> Calibration, Signal Adjustment, Voltage Regulation</p>
+                        <a href="datasheets/VR1K2R-SMD.pdf" target="_blank">Download Datasheet</a>
+                        <button onclick="openComponentDetail('VR1K2R-SMD')">More Info</button>
+                    
+                        </div>
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/potentiometer_vr5k_smd.jpg" alt="SMD Potentiometer VR5K-SMD">
+                            <h3>Trimmer Potentiometer</h3>
+                            <p><strong>Part No.:</strong> VR5K-SMD</p>
+                            <p><strong>Specifications:</strong> 5kΩ, 0.1W, 1206 Package, Multi-Turn</p>
+                            <p><strong>Application:</strong> Calibration, Current Control, Voltage Division</p>
+                            <a href="datasheets/VR5K-SMD.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('VR5K-SMD')">More Info</button>
+                        </div>
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/potentiometer_vr10k_smd.jpg" alt="SMD Potentiometer VR10K-SMD">
+                            <h3>Trimmer Potentiometer</h3>
+                            <p><strong>Part No.:</strong> VR10K-SMD</p>
+                            <p><strong>Specifications:</strong> 10kΩ, 0.2W, 0603 Package, Single-Turn</p>
+                            <p><strong>Application:</strong> Signal Adjustment, Feedback Circuits, Biasing</p>
+                            <a href="datasheets/VR10K-SMD.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('VR10K-SMD')">More Info</button>
+                        </div>
+                <!-- Add more Passive SMD Potentiometers here -->
+                    </div>
+
+                    <button class="accordion-button">Through Hole</button>
+                    <div class="accordion-content">
+                <!-- New Passive Through-Hole Potentiometer Component Card -->
+                        <div class="component-card military">
+                        <img class="image" src="images/passive/potentiometer_p10k-audio_through.jpg" alt="Through-Hole Potentiometer P10K-Audio">
+                        <h3>Audio Potentiometer</h3>
+                        <p><strong>Part No.:</strong> P10K-Audio</p>
+                        <p><strong>Specifications:</strong> 10kΩ, 0.5W, Axial Package, 10-Turn</p>
+                        <p><strong>Application:</strong> Audio Volume Control, User Interface Controls, Adjustable Gain Stages</p>
+                        <a href="datasheets/P10K-Audio.pdf" target="_blank">Download Datasheet</a>
+                        <button onclick="openComponentDetail('P10K-Audio')">More Info</button>
+                    
+                        </div>
+                        <!-- New Passive Through-Hole Potentiometer Component Card -->
+                        <div class="component-card military">
+                            <img class="image" src="images/passive/potentiometer_p5k_audio_through.jpg" alt="Through-Hole Potentiometer P5K-Audio">
+                            <h3>Audio Potentiometer</h3>
+                            <p><strong>Part No.:</strong> P5K-Audio</p>
+                            <p><strong>Specifications:</strong> 5kΩ, 0.5W, Axial Package, 10-Turn</p>
+                            <p><strong>Application:</strong> Audio Volume Control, Tone Adjustment, Signal Processing</p>
+                            <a href="datasheets/P5K-Audio.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('P5K-Audio')">More Info</button>
+                        </div>
+                        <!-- New Passive Through-Hole Potentiometer Component Card -->
+                        <!-- New Passive Through-Hole Potentiometer Component Card -->
+                        <div class="component-card military">
+                            <img class="image" src="images/passive/potentiometer_p50k_audio_through.jpg" alt="Through-Hole Potentiometer P50K-Audio">
+                            <h3>Audio Potentiometer</h3>
+                            <p><strong>Part No.:</strong> P50K-Audio</p>
+                            <p><strong>Specifications:</strong> 50kΩ, 0.5W, Axial Package, 10-Turn</p>
+                            <p><strong>Application:</strong> Audio Volume Control, User Interface Controls, Adjustable Gain Stages</p>
+                            <a href="datasheets/P50K-Audio.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('P50K-Audio')">More Info</button>
+                        </div>
+
+
+
+                <!-- Add more Passive Through-Hole Potentiometers here -->
+                    </div>
+                </div>
+                <button class="accordion-button">Capacitors</button>
+                <div class="accordion-content">
+                    <button class="accordion-button">SMD</button>
+                    <div class="accordion-content">
+                <!-- New Passive SMD Capacitor Component Card -->
+                        <div class="component-card commercial">
+                        <img class="image" src="images/passive/capacitor_c0603c104k5ractu_smd.jpg" alt="SMD Capacitor C0603C104K5RACTU">
+                        <h3>Ceramic Capacitor</h3>
+                        <p><strong>Part No.:</strong> C0603C104K5RACTU</p>
+                        <p><strong>Specifications:</strong> 100nF, 50V, 0603 Package, X7R Ceramic</p>
+                        <p><strong>Application:</strong> Decoupling, Filtering, Timing Circuits</p>
+                        <a href="datasheets/C0603C104K5RACTU.pdf" target="_blank">Download Datasheet</a>
+                        <button onclick="openComponentDetail('C0603C104K5RACTU')">More Info</button>
+                    
+                        </div>
+                <!-- Add more Passive SMD Capacitors here -->
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/capacitor_smd.jpg" alt="SMD Capacitor C1020">
+                            <h3>SMD Capacitor</h3>
+                            <p><strong>Part No.:</strong> C1020</p>
+                            <p><strong>Specifications:</strong> 1µF, 16V, 0805 Package</p>
+                            <p><strong>Application:</strong> Filtering, Decoupling, Energy Storage</p>
+                            <a href="datasheets/C1020.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('C1020')">More Info</button>
+                        </div>
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/capacitor_smd.jpg" alt="SMD Capacitor C2040">
+                            <h3>SMD Capacitor</h3>
+                            <p><strong>Part No.:</strong> C2040</p>
+                            <p><strong>Specifications:</strong> 10µF, 25V, 1206 Package</p>
+                            <p><strong>Application:</strong> Decoupling, Power Supply Smoothing, Bypassing</p>
+                            <a href="datasheets/C2040.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('C2040')">More Info</button>
+                        </div>
+                    </div>
+
+                    <button class="accordion-button">Through Hole</button>
+                    <div class="accordion-content">
+                <!-- New Passive Through-Hole Capacitor Component Card -->
+                        <div class="component-card military">
+                        <img class="image" src="images/passive/capacitor_c1n4700_through.jpg" alt="Through-Hole Capacitor C1N4700">
+                        <h3>Electrolytic Capacitor</h3>
+                        <p><strong>Part No.:</strong> C1N4700</p>
+                        <p><strong>Specifications:</strong> 470µF, 25V, Axial Package, Aluminum Electrolytic</p>
+                        <p><strong>Application:</strong> Power Supply Filtering, Energy Storage, Smoothing Circuits</p>
+                        <a href="datasheets/C1N4700.pdf" target="_blank">Download Datasheet</a>
+                        <button onclick="openComponentDetail('C1N4700')">More Info</button>
+                    
+                        </div>
+                <!-- Add more Passive Through-Hole Capacitors here -->
+                        <div class="component-card military">
+                            <img class="image" src="images/passive/capacitor_c2n100_through.jpg" alt="Through-Hole Capacitor C2N100">
+                            <h3>Ceramic Capacitor</h3>
+                            <p><strong>Part No.:</strong> C2N100</p>
+                            <p><strong>Specifications:</strong> 100nF, 50V, Radial Package, Ceramic</p>
+                            <p><strong>Application:</strong> Decoupling, Signal Filtering, Noise Suppression</p>
+                            <a href="datasheets/C2N100.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('C2N100')">More Info</button>
+                        </div>
+                        <div class="component-card military">
+                            <img class="image" src="images/passive/capacitor_c3p470_through.jpg" alt="Through-Hole Capacitor C3P470">
+                            <h3>Polypropylene Film Capacitor</h3>
+                            <p><strong>Part No.:</strong> C3P470</p>
+                            <p><strong>Specifications:</strong> 470nF, 100V, Radial Package, Polypropylene Film</p>
+                            <p><strong>Application:</strong> High-Frequency Filtering, Signal Coupling, Pulse Applications</p>
+                            <a href="datasheets/C3P470.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('C3P470')">More Info</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <button class="accordion-button">Transformers</button>
+                <div class="accordion-content">
+                    <button class="accordion-button">SMD</button>
+                    <div class="accordion-content">
+                <!-- New Passive SMD Transformer Component Card -->
+                        <div class="component-card commercial">
+                        <img class="image"src="images/passive/transformer_tdc1005_smd.jpg" alt="SMD Transformer TDC1005">
+                        <h3>DC-DC Converter Module</h3>
+                        <p><strong>Part No.:</strong> TDC1005</p>
+                        <p><strong>Specifications:</strong> 5V In, 12V Out, 1A, 100kHz, SMD-0805 Package</p>
+                        <p><strong>Application:</strong> Portable Devices, Power Management Systems</p>
+                        <a href="datasheets/TDC1005.pdf" target="_blank">Download Datasheet</a>
+                        <button onclick="openComponentDetail('TDC1005')">More Info</button>
+                    
+                        </div>
+                        <!-- New Passive SMD Transformer Component Card -->
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/transformer_tdc2005_smd.jpg" alt="SMD Transformer TDC2005">
+                            <h3>DC-DC Converter Module</h3>
+                            <p><strong>Part No.:</strong> TDC2005</p>
+                            <p><strong>Specifications:</strong> 5V In, 12V Out, 2A, 150kHz, SMD-0805 Package</p>
+                            <p><strong>Application:</strong> Portable Devices, Power Management, Battery-Powered Systems</p>
+                            <a href="datasheets/TDC2005.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('TDC2005')">More Info</button>
+                        </div>
+                        <!-- New Passive SMD Transformer Component Card -->
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/transformer_tdc4005_smd.jpg" alt="SMD Transformer TDC4005">
+                            <h3>DC-DC Converter Module</h3>
+                            <p><strong>Part No.:</strong> TDC4005</p>
+                            <p><strong>Specifications:</strong> 12V In, 5V Out, 1.5A, 100kHz, SMD-0805 Package</p>
+                            <p><strong>Application:</strong> Power Regulation, Voltage Conversion, Automotive Systems</p>
+                            <a href="datasheets/TDC4005.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('TDC4005')">More Info</button>
+                        </div>
+
+
+                <!-- Add more Passive SMD Transformers here -->
+                    </div>
+            
+
+            
+                   <button class="accordion-button">Through Hole</button>
+            `       <div class="accordion-content">
+                <!-- New Passive Through-Hole Transformer Component Card -->
+                        <div class="component-card military">
+                        <img class="image" src="images/passive/transformer_tp300-12_through.jpg" alt="Through-Hole Transformer TP300-12">
+                        <h3>Power Transformer</h3>
+                        <p><strong>Part No.:</strong> TP300-12</p>
+                        <p><strong>Specifications:</strong> 120V AC In, 12V AC Out, 300W, Laminated Silicon Steel, Axial Package</p>
+                        <p><strong>Application:</strong> Power Supply Units, Audio Equipment, Industrial Machinery</p>
+                        <a href="datasheets/TP300-12.pdf" target="_blank">Download Datasheet</a>
+                        <button onclick="openComponentDetail('TP300-12')">More Info</button>
+                    
+                        </div>
+                        <div class="component-card military">
+                            <img class="image" src="images/passive/transformer_tp500-24_through.jpg" alt="Through-Hole Transformer TP500-24">
+                            <h3>Power Transformer</h3>
+                            <p><strong>Part No.:</strong> TP500-24</p>
+                            <p><strong>Specifications:</strong> 240V AC In, 24V AC Out, 500W, Laminated Silicon Steel, Axial Package</p>
+                            <p><strong>Application:</strong> Power Supply Units, Industrial Equipment, UPS Systems</p>
+                            <a href="datasheets/TP500-24.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('TP500-24')">More Info</button>
+                        </div>
+                        <div class="component-card military">
+                            <img class="image" src="images/passive/transformer_tp1000-48_through.jpg" alt="Through-Hole Transformer TP1000-48">
+                            <h3>Power Transformer</h3>
+                            <p><strong>Part No.:</strong> TP1000-48</p>
+                            <p><strong>Specifications:</strong> 480V AC In, 48V AC Out, 1000W, Laminated Silicon Steel, Axial Package</p>
+                            <p><strong>Application:</strong> High-Power Systems, Electrical Distribution, Industrial Machinery</p>
+                            <a href="datasheets/TP1000-48.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('TP1000-48')">More Info</button>
+                        </div>
+
+                <!-- Add more  
+                    Passive Through-Hole Transformers here -->
+                    </div>
+                </div>
+
+               <button class="accordion-button">Diodes</button>
+               <div class="accordion-content">
+                    <button class="accordion-button">SMD</button>
+                    <div class="accordion-content">
+                        <!-- Example Passive SMD Component -->
+                        <div class="component-card commercial">
+                        <img class="image" src="images/passive/diode_ss14_smd.jpg" alt="SMD Diode SS14">
+                        <h3>Schottky Diode</h3>
+                        <p><strong>Part No.:</strong> SS14</p>
+                        <p><strong>Specifications:</strong> 40V, 1A, SMC Package</p>
+                        <p><strong>Application:</strong> Power Supplies, Reverse Current Protection</p>
+                        <a href="datasheets/SS14.pdf" target="_blank">Download Datasheet</a>
+                        <button onclick="openComponentDetail('SS14')">More Info</button>
+                            
+                        </div>
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/diode_ss24_smd.jpg" alt="SMD Diode SS24">
+                            <h3>Schottky Diode</h3>
+                            <p><strong>Part No.:</strong> SS24</p>
+                            <p><strong>Specifications:</strong> 40V, 2A, SMC Package</p>
+                            <p><strong>Application:</strong> DC-DC Converters, Low Voltage Rectification</p>
+                            <a href="datasheets/SS24.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('SS24')">More Info</button>
+                        </div>
+                        <div class="component-card commercial">
+                            <img class="image" src="images/passive/diode_fr107_smd.jpg" alt="SMD Diode FR107">
+                            <h3>Fast Recovery Diode</h3>
+                            <p><strong>Part No.:</strong> FR107</p>
+                            <p><strong>Specifications:</strong> 1000V, 1A, SMA Package</p>
+                            <p><strong>Application:</strong> High Voltage Rectification, Free-Wheeling Diode Applications</p>
+                            <a href="datasheets/FR107.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('FR107')">More Info</button>
+                        </div>
+
+                        <!-- Add more Passive SMD Components here -->
+
+                        
+                    </div>
+
+                    <button class="accordion-button">Through Hole</button>
+                    <div class="accordion-content">
+                        <!-- Example Passive Through Hole Component -->
+                        <div class="component-card military">
+                            <img class="image" src="images/passive/diode_1n4007_through.jpg" alt="Through Hole Diode 1N4007">
+                            <h3>Rectifier Diode</h3>
+                            <p><strong>Part No.:</strong> 1N4007</p>
+                            <p><strong>Specifications:</strong> 1000V, 1A, DO-41 Package</p>
+                            <p><strong>Application:</strong> Power Supplies, AC to DC Conversion</p>
+                            <a href="datasheets/1N4007.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('1N4007')">More Info</button>
+                            
+                        </div>
+                        <div class="component-card military">
+                            <img class="image" src="images/passive/diode_1n5408_through.jpg" alt="Through Hole Diode 1N5408">
+                            <h3>Rectifier Diode</h3>
+                            <p><strong>Part No.:</strong> 1N5408</p>
+                            <p><strong>Specifications:</strong> 1000V, 3A, DO-201 Package</p>
+                            <p><strong>Application:</strong> High Voltage Power Supplies, AC to DC Conversion, Industrial Equipment</p>
+                            <a href="datasheets/1N5408.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('1N5408')">More Info</button>
+                        </div>
+                        <div class="component-card military">
+                            <img class="image" src="images/passive/diode_1n5819_through.jpg" alt="Through Hole Diode 1N5819">
+                            <h3>Schottky Rectifier Diode</h3>
+                            <p><strong>Part No.:</strong> 1N5819</p>
+                            <p><strong>Specifications:</strong> 40V, 1A, DO-41 Package</p>
+                            <p><strong>Application:</strong> Low Voltage Rectification, High-Speed Switching, Reverse Current Protection</p>
+                            <a href="datasheets/1N5819.pdf" target="_blank">Download Datasheet</a>
+                            <button onclick="openComponentDetail('1N5819')">More Info</button>
+                        </div>
+                        
+                        
+
+                        <!-- Add more Passive Through Hole Components here -->
+                    </div>
+                </div>
+            </div>   
+        </div>      <!-- Add more Passive Component Categories here (e.g., Resistors, Capacitors) -->
+    </main>
+
+    <footer>
+        <p>Tech Art Designers </p>
+    </footer>
+
+    <script src="script6.js"></script>
+</body>
+</html>
